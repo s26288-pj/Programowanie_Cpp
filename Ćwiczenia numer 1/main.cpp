@@ -22,7 +22,7 @@ auto count_chars(std::string word, char letter)
 {
     int number_of_chars = 0;
     for(int i = 0; i<=word.length(); i++)
-        if(word[i] == char(letter)) number_of_chars++;
+        if(word[i] == letter) number_of_chars++;
     return number_of_chars;
 };
 
@@ -30,7 +30,6 @@ auto write_letters(std::string word, int jump)
 {
     for(int i = 0; i < word.length(); i++)
         if(i%jump == jump-1) std::cout << word[i] << " ";
-    return 0;
 };
 
 auto is_palindrome(std::string word)
@@ -54,7 +53,7 @@ auto is_palindrome(std::string word)
     }
 
     std::cout << std::boolalpha;
-    std::cout << is_it;
+    return is_it;
 };
 
 auto box_print(std::string word1, std::string word2, std::string word3, std::string word4, std::string word5)
@@ -165,7 +164,7 @@ int main() {
 
 //    ZADANIE 9
 //
-//    is_palindrome("pallap");
+//    std::cout << is_palindrome("pallap");
 
 //    ZADANIE 10
 //
