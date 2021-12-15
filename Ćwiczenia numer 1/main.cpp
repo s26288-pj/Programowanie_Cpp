@@ -15,7 +15,7 @@ auto is_even(int x)
         number = true;
     }
     std::cout << std::boolalpha;
-    std::cout << number;
+    return number;
 };
 
 auto count_chars(std::string word, char letter)
@@ -149,11 +149,11 @@ int main() {
 
 //    ZADANIE 5
 //
-//    is_even(7);
+//    std::cout << is_even(7);
 
 //    ZADANIE 6
 //
-//    is_even(8);
+//    std::cout << is_even(8);
 
 //    ZADANIE 7
 //
