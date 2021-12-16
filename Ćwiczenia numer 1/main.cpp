@@ -37,7 +37,7 @@ auto is_palindrome(std::string word)
     bool is_it = false;
     if(word.length()%2 == 0)
     {
-        for(int i = 0; i<(word.length()/2)-1; i++)
+        for(int i = 0; i<word.length(); i++)
         {
             if(word[i] == word[word.length()-1-i]) is_it = true;
             else is_it = false;
@@ -164,7 +164,7 @@ int main() {
 
 //    ZADANIE 9
 //
-//    std::cout << is_palindrome("pallap");
+//    std::cout << is_palindrome("kajjax");
 
 //    ZADANIE 10
 //
